@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:padding="10dp"
+    android:background="@drawable/myplace_cell_background"
+    android:layout_height="wrap_content"
+    android:layoutDirection="locale">
+
+    <ImageView
+        android:id="@+id/place_img"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/default_image_small" />
+
+
+    <RelativeLayout
+        android:id="@+id/place_info_internallayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/place_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLength="100"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:hint="@string/no_title"
+            android:text="The Atlnaticssdbsdb sdb sdb sdb sdb sdb sdb sdbbsd bsdbssd Ocean Lol"
+            android:textColor="@android:color/black"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/place_description"
+            android:hint="@string/no_description"
+            android:layout_below="@id/place_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="2dp"
+            android:textSize="14sp"
+            android:maxLength="100"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:text="ROFL sadkasj dklas j dka sld"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/location_name"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/small_place_icon_gray"
+            android:drawablePadding="2dp"
+            android:hint="@string/no_address"
+            android:text="Delhi"
+            android:textColor="@android:color/black"
+            android:textSize="12sp" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

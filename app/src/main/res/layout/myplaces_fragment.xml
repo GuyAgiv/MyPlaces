@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEEEEE">
+
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/menu_places"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:padding="15dp"
+        tools:context=".MainActivity">
+
+        <Button
+            android:id="@+id/category_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/main_button_background"
+            android:text="@string/option_category"
+            android:textAllCaps="false"
+            android:textColor="#fff" />
+
+        <Button
+            android:id="@+id/country_btn"
+            android:layout_width="wrap_content"
+            android:layout_toEndOf="@id/category_btn"
+            android:layout_height="35dp"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/main_button_background"
+            android:text="@string/option_country"
+            android:textAllCaps="false"
+            android:textColor="#fff" />
+
+        <Button
+            android:id="@+id/city_btn"
+            android:layout_width="wrap_content"
+            android:layout_toEndOf="@id/country_btn"
+            android:layout_height="35dp"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/main_button_background"
+            android:text="@string/option_city"
+            android:textAllCaps="false"
+            android:textColor="#fff" />
+
+        <ImageButton
+            android:id="@+id/sort_btn"
+            android:layout_width="35dp"
+            android:layout_alignParentEnd="true"
+            android:layout_height="35dp"
+            android:layout_marginEnd="5dp"
+            android:src="@drawable/ic_search_white_24dp"
+            android:background="@drawable/solid_circle"
+            android:textAllCaps="false"
+            android:textColor="#fff" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/empty_list_textview"
+        android:gravity="center"
+        android:textColor="#AAAAAA"
+        android:textSize="20sp"
+        android:layout_below="@id/menu_places"
+        android:text="@string/your_place_list_is_empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ListView
+        android:id="@+id/myplaces_Listview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/menu_places"
+        android:paddingBottom="10dp"
+        android:dividerHeight="5.0sp"
+        android:divider="@android:color/transparent"
+        android:paddingEnd="10dp"
+        android:paddingStart="10dp" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:gravity="end"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/add_place_btn"
+            android:layout_marginEnd="4dp"
+            android:background="@drawable/circle_shape_icon_background_blue"
+            android:src="@drawable/ic_add_black_24dp"
+            android:layout_height="60dp"
+            android:layout_width="60dp" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>
